@@ -1,0 +1,30 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 10% 2fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+    "nav bio img";
+}
+img {
+    justify-self: end;
+}
+#bio {
+    grid-area: bio;
+    text-align: center;
+}
+#img {
+    grid-area: img;
+    max-width: 100%;
+    height: auto;
+    justify-self: end;
+    border-radius: 10px;
+}
+#nav {
+    grid-area: nav;
+    text-align: left;
+    justify-self: start;
+}
+ul {
+    list-style: none;
+}
